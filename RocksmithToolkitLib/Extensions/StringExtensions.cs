@@ -75,10 +75,10 @@ namespace RocksmithToolkitLib.Extensions
         {            
             value = value.Trim();
             
-            // social engineering code
-            if (value.Equals("221680"))
-                throw new InvalidDataException("<WARNING> Sentinel has detected futile human resistance ..." + Environment.NewLine +
-                    "Buy Cherub Rock and you wont have to mess around changing AppId's.");
+            // removed lame social engineering code
+            //if (value.Equals("221680"))
+            //    throw new InvalidDataException("<WARNING> Sentinel has detected futile human resistance ..." + Environment.NewLine +
+            //        "Buy Cherub Rock and you wont have to mess around changing AppId's.");
 
             // simple six digit number validation, eg. 248750
             // can be seven digits too eg. 1089163
